@@ -11,7 +11,7 @@ class PdfReport:
         pdf = FPDF(orientation="P", unit="pt", format="A4")
         pdf.add_page()
 
-        pdf.image("house.png", w=30, h=30)
+        pdf.image("files/house.png", w=30, h=30)
 
         pdf.set_font(family="Times", size=24, style="B")
         pdf.cell(w=0, h=80, txt="Flatmates bill" , border=0, align="C", ln=1)
@@ -26,7 +26,7 @@ class PdfReport:
 
         pdf.cell(w=100, h=25, txt=flatmate2.name , border=0)
         pdf.cell(w=150, h=25, txt=str(round(flatmate2.pays(bill,flatmate1))) , border=0, ln=1)
-
+        
+        os.chdir('files')
         pdf.output(self.filename + '.pdf')
-
         webbrowser.open('file://' + os.path.realpath(self.filename + '.pdf'))
