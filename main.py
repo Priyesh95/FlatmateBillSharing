@@ -1,23 +1,28 @@
-from flat import Bill
-from flat import Flatmate
-from reports import PdfReport
+from flask.views import MethodView
+from wtforms import Form
+from flask import Flask, render_template
 
-amount = float(input("Please enter the bill amount: "))
-period = input("What is the period? eg. December 2020 ")
-
-name1 = input("Please enter your name? ")
-num_of_days1 = int(input(f"How many days {name1} stay during the period? "))
-
-name2 = input("Please enter your name? ")
-num_of_days2 = int(input(f"How many days {name2} stay during the period? "))
+app = Flask(__name__)
 
 
-bill = Bill(amount,period)
-John = Flatmate(name1,num_of_days1)
-Mary = Flatmate(name2,num_of_days2)
-report = PdfReport(period)
-print(John.pays(bill,Mary))
-print(Mary.pays(bill,Mary))
+class HomePage(MethodView):
+    
+    def get(self):
+        return render_template('index.html')
 
-report.generate(John, Mary, bill)
+class BillFormPage(MethodView):
+    
+    def get(self):
+        return render_template('bill_form_page.html')
 
+class ResultsPage(MethodView):
+    pass
+
+class BillForm(Form):
+    pass
+
+
+app.add_url_rule("/",view_func=HomePage.as_view("home_page"))
+app.add_url_rule("/bill",view_func=BillFormPage.as_view("bill_form_page"))
+
+app.run(debug=True)
