@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BillBuddy - Expense Results</title>
+    <link rel="stylesheet" href="static/result.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header-title">BillBuddy</h1>
+        <p class="header-subtitle">Your Flatmates' Ultimate Expense Sharing Solution!</p>
+    </header>
+
+    <div class="container">
+        <h2 class="results-title">Expense Results</h2>
+        <div class="results">
+            <div class="result-item">
+                <h3 class="result-name">{{period}}</h3>
+                <p class="result-amount">{{name1}} pays ${{amount1}}</p>
+                <p class="result-amount">{{name2}} pays ${{amount2}}</p>
+                <p class="result-split">Split equally among 2 roommates</p>
+            </div>
+            <!-- Add more result items as needed -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Contact Us</a>
+        </div>
+        <p class="footer-text">© 2024 BillBuddy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

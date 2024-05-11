@@ -2,13 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Flatmate Bill Sharing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BillBuddy - Expense Sharing App for Flatmates</title>
+    <link rel="stylesheet" href="static/index.css">
 </head>
 <body>
-    <h2>Flatmate's Bill</h2>
-    <p>This app can be used to split bills between two flatmates</p>
 
-    <a href={{url_for('bill_form_page')}}>Go to Bill page</a>
+    <header class="header">
+        <h1 class="header-title">Welcome to BillBuddy</h1>
+        <p class="header-subtitle">Your Flatmates' Ultimate Expense Sharing Solution!</p>
+    </header>
+
+    <section class="features">
+        <h2 class="section-title">Key Features</h2>
+        <ul class="feature-list">
+            <li>Streamlined Expense Tracking</li>
+            <li>Automatic Splitting</li>
+            <li>Expense Insights</li>
+        </ul>
+    </section>
+
+    <section class="how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <ol class="steps">
+            <li>Sign Up</li>
+            <li>Track Expenses</li>
+            <li>Check Splits</li>
+            <li>Stay Organized</li>
+        </ol>
+    </section>
+
+    <section class="why-choose">
+        <h2 class="section-title">Why Choose BillBuddy?</h2>
+        <ul class="choose-list">
+            <li>Effortless Convenience</li>
+            <li>Transparent Splitting</li>
+            <li>Financial Insights</li>
+            <li>Secure & Reliable</li>
+        </ul>
+    </section>
+
+    <section class="get-started">
+        <h2 class="section-title">Get Started Today!</h2>
+        <div style="text-align:center">
+            <a href={{url_for('bill_form_page')}} class="cta-button">Get Started Now</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Contact Us</a>
+        </div>
+        <p class="footer-text">© 2024 BillBuddy. All rights reserved.</p>
+    </footer>
+
 </body>
-
 </html>

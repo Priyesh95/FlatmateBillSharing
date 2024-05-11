@@ -1,1 +1,60 @@
-<h1>Hello from bill page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BillBuddy - Expense Sharing App for Flatmates</title>
+    <link rel="stylesheet" href="static/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header-title">Welcome to BillBuddy</h1>
+        <p class="header-subtitle">Your Flatmates' Ultimate Expense Sharing Solution!</p>
+    </header>
+
+    <div class="container">
+        <form action="/results" method="post" class="expense-form">
+            <h2 class="form-title">Add New Expense</h2>
+            <div class="form-group">
+                <label for="expense-name">{{bill_form.period.label}}</label>
+                {{bill_form.period}}
+            </div>
+            <div class="form-group">
+                <label for="expense-name">{{bill_form.amount.label}}</label>
+                {{bill_form.amount}}
+            </div>
+
+            <div class="form-group">
+                <label for="expense-name">{{bill_form.name1.label}}</label>
+                {{bill_form.name1}}
+            </div>
+
+            <div class="form-group">
+                <label for="expense-name">{{bill_form.days_in_house1.label}}</label>
+                {{bill_form.days_in_house1}}
+            </div>
+
+            <div class="form-group">
+                <label for="expense-name">{{bill_form.name2.label}}</label>
+                {{bill_form.name2}}
+            </div>
+
+            <div class="form-group">
+                <label for="expense-name">{{bill_form.days_in_house2.label}}</label>
+                {{bill_form.days_in_house2}}
+            </div>
+            {{bill_form.submit}}
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Contact Us</a>
+        </div>
+        <p class="footer-text">© 2024 BillBuddy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

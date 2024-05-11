@@ -1,0 +1,106 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+}
+
+/* Sections */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.features,
+.how-it-works,
+.why-choose,
+.get-started {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.feature-list,
+.choose-list,
+.steps {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.feature-list li,
+.choose-list li,
+.steps li {
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+}
