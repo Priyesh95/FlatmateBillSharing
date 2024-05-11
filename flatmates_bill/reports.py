@@ -29,4 +29,4 @@ class PdfReport:
         
         os.chdir('files')
         pdf.output(self.filename + '.pdf')
-        webbrowser.open('file://' + os.path.realpath(self.filename + '.pdf'))
+        # webbrowser.open('file://' + os.path.realpath(self.filename + '.pdf'))
